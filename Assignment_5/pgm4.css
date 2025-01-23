@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background: #333;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu-item {
+    position: relative;
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    background: #575757;
+}
+
+.dropdown-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background: #333;
+    top: 100%;
+}
+.menu-item:hover .dropdown-menu {
+    display: block;
+}
+
+
