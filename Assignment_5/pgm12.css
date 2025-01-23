@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.theme-toggle {
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button.theme-toggle:checked ~ body {
+    background-color: black;
+    color: white;
+}
+
+body[data-theme="dark"] {
+    background-color: black;
+    color: white;
+}
+
+
