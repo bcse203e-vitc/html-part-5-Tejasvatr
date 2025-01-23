@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.main_c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+section:hover img {
+    transform: scale(1.1);
+}
+
+section p {
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+
+
