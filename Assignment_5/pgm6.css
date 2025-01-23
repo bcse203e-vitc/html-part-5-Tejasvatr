@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+.animated-header {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    animation: colorChange 2s infinite alternate;
+    transition: transform 0.3s;
+}
+
+.animated-header:hover {
+    transform: scale(1.2);
+}
+@keyframes colorChange {
+    from {
+        color: #333;
+    }
+    to {
+        color: #ff7e5f;
+    }
+}
+
+
